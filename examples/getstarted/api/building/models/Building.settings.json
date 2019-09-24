@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "buildings",
+  "info": {
+    "name": "building",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

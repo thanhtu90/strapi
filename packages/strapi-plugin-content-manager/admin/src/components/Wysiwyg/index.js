@@ -716,6 +716,12 @@ class Wysiwyg extends React.Component {
       ),
     });
 
+    console.log('headers: ', headers);
+    console.log('formData: ', formData);
+    for (var value of formData.entries()) {
+      console.log(value);
+    }
+
     return request(
       '/upload',
       { method: 'POST', headers, body: formData },

@@ -16,7 +16,7 @@ import {
   validateInput,
 } from 'strapi-helper-plugin';
 
-import Wysiwyg from '../Wysiwyg';
+import App from '../CKEditor';
 
 import styles from './styles.scss';
 
@@ -117,7 +117,7 @@ class WysiwygWithErrors extends React.Component {
           message={label}
           style={labelStyle}
         />
-        <Wysiwyg
+        <App
           autoFocus={autoFocus}
           className={inputClassName}
           disabled={disabled}
@@ -131,6 +131,7 @@ class WysiwygWithErrors extends React.Component {
           style={inputStyle}
           tabIndex={tabIndex}
           value={value}
+          data={value}
         />
         <InputDescription
           className={inputDescriptionClassName}
